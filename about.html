@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — eunivadev</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">eunivadev</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="mailto:you@email.com">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <div class="page-header">
+      <div class="page-tag">About me</div>
+      <h1 class="page-title">The person<br/>behind the <em>terminal.</em></h1>
+      <p class="page-desc">IT professional, aspiring network engineer, and part-time photographer.</p>
+    </div>
+
+    <!-- INTRO -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.2s forwards;">
+      <div>
+        <div class="status"><span class="status-dot"></span> Open to networking roles</div>
+        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9; margin-bottom: 16px;">
+          <!-- Replace with your own story -->
+          I'm [Your Name], an IT support professional based in [Your City]. I've spent [X] years
+          in help desk environments — diagnosing issues, supporting users, and learning how
+          technology actually behaves when it breaks.
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9; margin-bottom: 24px;">
+          That hands-on experience pushed me to want to understand networks at a deeper level —
+          not just what's wrong, but why, and how the underlying infrastructure works. Now I'm
+          working toward my CompTIA Network+ and building out a home lab to back it up.
+        </p>
+        <a href="#" class="btn btn-ghost">Download resume →</a>
+      </div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 32px;">
+        <div class="section-label" style="margin-bottom: 20px;">Quick facts</div>
+        <table style="width: 100%; font-family: var(--font-mono); font-size: 13px; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="color: var(--muted); padding: 10px 0;">Location</td>
+            <td style="color: var(--text); text-align: right;">[Your City, State]</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="color: var(--muted); padding: 10px 0;">Current role</td>
+            <td style="color: var(--text); text-align: right;">Help Desk / IT Support</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="color: var(--muted); padding: 10px 0;">Target role</td>
+            <td style="color: var(--accent); text-align: right;">Network Engineer</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="color: var(--muted); padding: 10px 0;">Studying</td>
+            <td style="color: var(--text); text-align: right;">CompTIA Network+</td>
+          </tr>
+          <tr>
+            <td style="color: var(--muted); padding: 10px 0;">Hobby</td>
+            <td style="color: var(--text); text-align: right;">Photography</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div style="margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.35s forwards;">
+      <div class="section-label">Skills & tools</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🖥️</div>
+          <h3>IT Support</h3>
+          <p>Ticketing systems, Windows & Linux environments, hardware troubleshooting, user support, remote tools.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Networking (in progress)</h3>
+          <p>TCP/IP, subnetting, VLANs, DNS/DHCP, Wireshark, ping/tracert diagnostics, home lab practice.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Dev & Tools</h3>
+          <p>Git, GitHub, HTML/CSS, basic scripting. Comfortable working in a terminal and building things from scratch.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTSIDE WORK -->
+    <div style="opacity:0; animation: fadeUp 0.6s ease 0.5s forwards;">
+      <div class="section-label">Outside of work</div>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 32px; max-width: 620px;">
+        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9; margin-bottom: 16px;">
+          Photography is how I stay creative and curious. I shoot [your subjects — e.g. street,
+          landscape, portrait] and I love finding the interesting angle in an ordinary moment.
+        </p>
+        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9;">
+          <!-- Add anything else personal: hobbies, what drives you, fun facts -->
+        </p>
+        <a href="photography.html" class="btn btn-ghost" style="margin-top: 20px; display: inline-block;">See my photos →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 eunivadev — built with GitHub Pages</p>
+    <div class="social-links">
+      <a href="https://github.com/eunivadev" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="mailto:you@email.com">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>

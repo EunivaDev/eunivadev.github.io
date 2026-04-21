@@ -1,127 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experience — eunivadev</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience — eunivadev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/experience.css" />
 </head>
+
 <body>
 
-  <nav>
-    <a href="index.html" class="nav-logo">eunivadev</a>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="photography.html">Photography</a></li>
-      <li><a href="mailto:you@email.com">Contact</a></li>
-    </ul>
-  </nav>
+    <div id="navbar"></div>
+    <script src="js/loadNavbar.js"></script>
 
-  <main class="page-content">
 
-    <div class="page-header">
-      <div class="page-tag">Experience</div>
-      <h1 class="page-title">My IT Journey<br/><em>From Networking Foundations to Real Experience</em></h1>
-      <p class="page-desc">
-        My IT support background gives me the real-world context — now I'm adding the
-        depth. Here's where I document that journey.
-      </p>
-    </div>
+    <main class="page-content">
 
-    <!-- CERT ROADMAP -->
-    <div style="margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.2s forwards;">
-      <div class="section-label">Certification roadmap</div>
-      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px;">
-
-        <div style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px;">
-          <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); flex-shrink: 0;"></div>
-          <div style="flex: 1;">
-            <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px;">IT Support / Help Desk</div>
-            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Real-world experience — current role</div>
-          </div>
-          <div style="font-family: var(--font-mono); font-size: 11px; background: rgba(0,212,160,0.12); color: var(--accent); padding: 4px 10px; border-radius: 20px;">Complete</div>
+        <div class="page-header">
+            <div class="page-tag">Experience</div>
+            <h1 class="page-title">My IT Journey<br /><em>From Networking Foundations to Real Experience</em></h1>
+            <p class="page-desc">
+                My IT support background gives me the real-world context — now I'm adding the
+                depth. Here's where I document that journey.
+            </p>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid rgba(0,212,160,0.3); border-radius: 8px; padding: 20px 24px;">
-          <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex-shrink: 0; animation: pulse 2s infinite;"></div>
-          <div style="flex: 1;">
-            <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px; color: var(--accent);">CompTIA Network+</div>
-            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Core networking concepts, protocols, infrastructure</div>
-          </div>
-          <div style="font-family: var(--font-mono); font-size: 11px; background: rgba(0,212,160,0.12); color: var(--accent); padding: 4px 10px; border-radius: 20px;">In progress</div>
+        <!-- ① CAREER TIMELINE -->
+        <div style="margin-bottom: 72px; opacity:0; animation: fadeUp 0.6s ease 0.1s forwards;">
+            <div class="section-label">Work & career timeline</div>
+            <div class="timeline">
+
+                <!-- Current role -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-meta">
+                        [Start Year] — Present
+                        <span class="tl-badge">Current</span>
+                    </div>
+                    <div class="timeline-role">[Your Job Title]</div>
+                    <div class="timeline-company">[Company Name] &middot; [City, State]</div>
+                    <ul class="timeline-bullets">
+                        <li>Provided Tier [1/2] support for [X] end users across [Windows / Mac / Linux] environments
+                        </li>
+                        <li>Diagnosed and resolved hardware, software, and connectivity issues via ticketing system</li>
+                        <li>Managed user accounts, permissions, and onboarding in [Active Directory / Azure AD]</li>
+                        <li>Add another achievement or responsibility that shows your impact</li>
+                    </ul>
+                </div>
+
+                <!-- Previous role — duplicate or remove as needed -->
+                <div class="timeline-item">
+                    <div class="timeline-dot past"></div>
+                    <div class="timeline-meta">[Start Year] — [End Year]</div>
+                    <div class="timeline-role">[Previous Job Title]</div>
+                    <div class="timeline-company">[Company Name] &middot; [City, State]</div>
+                    <ul class="timeline-bullets">
+                        <li>Describe your responsibilities and achievements here</li>
+                        <li>Quantify where you can — tickets resolved, uptime maintained, users supported</li>
+                        <li>Include anything networking-adjacent: VPNs, printers, Wi-Fi, cables, switches</li>
+                    </ul>
+                </div>
+
+                <!-- Add more roles by copying a .timeline-item block above this line -->
+
+            </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px; opacity: 0.5;">
-          <div style="width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--muted); flex-shrink: 0;"></div>
-          <div style="flex: 1;">
-            <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px;">Cisco CCNA</div>
-            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Enterprise networking, routing & switching — next goal</div>
-          </div>
-          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--muted); padding: 4px 10px; border: 1px solid var(--border); border-radius: 20px;">Planned</div>
+
+        <!-- CERT ROADMAP -->
+        <div style="margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.2s forwards;">
+            <div class="section-label">Certification roadmap</div>
+            <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px;">
+
+                <div
+                    style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px;">
+                    <div
+                        style="width: 10px; height: 10px; border-radius: 50%; background: var(--muted); flex-shrink: 0;">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px;">IT Support / Help Desk</div>
+                        <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Real-world
+                            experience —
+                            current role</div>
+                    </div>
+                    <div
+                        style="font-family: var(--font-mono); font-size: 11px; background: rgba(0,212,160,0.12); color: var(--accent); padding: 4px 10px; border-radius: 20px;">
+                        Complete</div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid rgba(0,212,160,0.3); border-radius: 8px; padding: 20px 24px;">
+                    <div
+                        style="width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex-shrink: 0; animation: pulse 2s infinite;">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px; color: var(--accent);">
+                            CompTIA Network+
+                        </div>
+                        <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Core
+                            networking concepts,
+                            protocols, infrastructure</div>
+                    </div>
+                    <div
+                        style="font-family: var(--font-mono); font-size: 11px; background: rgba(0,212,160,0.12); color: var(--accent); padding: 4px 10px; border-radius: 20px;">
+                        In progress</div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px; opacity: 0.5;">
+                    <div
+                        style="width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--muted); flex-shrink: 0;">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 14px; font-weight: 700; margin-bottom: 2px;">Cisco CCNA</div>
+                        <div style="font-family: var(--font-mono); font-size: 12px; color: var(--muted);">Enterprise
+                            networking,
+                            routing & switching — next goal</div>
+                    </div>
+                    <div
+                        style="font-family: var(--font-mono); font-size: 11px; color: var(--muted); padding: 4px 10px; border: 1px solid var(--border); border-radius: 20px;">
+                        Planned</div>
+                </div>
+
+            </div>
         </div>
 
-      </div>
-    </div>
 
-    <!-- HOME LAB -->
-    <div style="margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.35s forwards;">
-      <div class="section-label">Home lab & projects</div>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-icon">🖧</div>
-          <h3>Project title here</h3>
-          <p>Describe what you built or configured. Even small things count — a VLAN setup, a pi-hole DNS, a subnetting exercise.</p>
-          <span class="card-arrow">View on GitHub →</span>
+        <!-- ③ LEARNING PROGRESSION -->
+        <div style="margin-bottom: 72px; opacity:0; animation: fadeUp 0.6s ease 0.4s forwards;">
+            <div class="section-label">Learning progression</div>
+            <div class="learning-track">
+
+                <div class="learn-item">
+                    <div class="learn-left">
+                        <div class="learn-node done">✓</div>
+                        <div class="learn-connector"></div>
+                    </div>
+                    <div class="learn-right">
+                        <div class="learn-period">Foundation</div>
+                        <div class="learn-title">IT support fundamentals</div>
+                        <div class="learn-desc">Day-to-day help desk work built core troubleshooting habits — hardware,
+                            OS,
+                            connectivity, user management, and working under pressure in real environments.</div>
+                        <div class="learn-tags">
+                            <span class="learn-tag">Windows</span>
+                            <span class="learn-tag">Active Directory</span>
+                            <span class="learn-tag">Ticketing systems</span>
+                            <span class="learn-tag">VPN basics</span>
+                            <span class="learn-tag">DNS / DHCP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learn-item">
+                    <div class="learn-left">
+                        <div class="learn-node done">✓</div>
+                        <div class="learn-connector"></div>
+                    </div>
+                    <div class="learn-right">
+                        <div class="learn-period">Self-study</div>
+                        <div class="learn-title">Networking concepts & subnetting</div>
+                        <div class="learn-desc">Started studying the OSI model, IP addressing, subnetting, and routing
+                            fundamentals.
+                            Supplemented with practice labs and online resources.</div>
+                        <div class="learn-tags">
+                            <span class="learn-tag">OSI model</span>
+                            <span class="learn-tag">TCP/IP</span>
+                            <span class="learn-tag">Subnetting</span>
+                            <span class="learn-tag">Wireshark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learn-item">
+                    <div class="learn-left">
+                        <div class="learn-node active">→</div>
+                        <div class="learn-connector"></div>
+                    </div>
+                    <div class="learn-right">
+                        <div class="learn-period">Now</div>
+                        <div class="learn-title" style="color: var(--accent);">CompTIA Network+ preparation</div>
+                        <div class="learn-desc">Actively studying for Network+ through [your study resources — e.g.
+                            Professor
+                            Messer, Udemy, Mike Meyers]. Building a home lab to reinforce concepts hands-on.</div>
+                        <div class="learn-tags">
+                            <span class="learn-tag hi">Network+</span>
+                            <span class="learn-tag">Routing protocols</span>
+                            <span class="learn-tag">VLANs</span>
+                            <span class="learn-tag">Network security</span>
+                            <span class="learn-tag">Home lab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learn-item">
+                    <div class="learn-left">
+                        <div class="learn-node planned">○</div>
+                        <div class="learn-connector"></div>
+                    </div>
+                    <div class="learn-right">
+                        <div class="learn-period">Next</div>
+                        <div class="learn-title" style="color: var(--muted);">Cisco CCNA</div>
+                        <div class="learn-desc">After Network+, deepen into enterprise-grade routing and switching —
+                            OSPF, BGP, STP,
+                            and Cisco IOS configuration.</div>
+                        <div class="learn-tags">
+                            <span class="learn-tag">CCNA</span>
+                            <span class="learn-tag">Cisco IOS</span>
+                            <span class="learn-tag">OSPF</span>
+                            <span class="learn-tag">Switching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learn-item">
+                    <div class="learn-left">
+                        <div class="learn-node planned">○</div>
+                    </div>
+                    <div class="learn-right">
+                        <div class="learn-period">Goal</div>
+                        <div class="learn-title" style="color: var(--muted);">Network engineer role</div>
+                        <div class="learn-desc">The destination — designing, implementing, and maintaining network
+                            infrastructure at
+                            scale. Every step above is building toward this.</div>
+                        <div class="learn-tags">
+                            <span class="learn-tag">Network engineering</span>
+                            <span class="learn-tag">Infrastructure</span>
+                            <span class="learn-tag">Full transition</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="card">
-          <div class="card-icon">📡</div>
-          <h3>Another project</h3>
-          <p>What problem did you solve? What did you learn? Write 2–3 sentences. Link to a repo or writeup if you have one.</p>
-          <span class="card-arrow">Read writeup →</span>
+
+        <!-- HOME LAB -->
+        <div style="margin-bottom: 64px; opacity:0; animation: fadeUp 0.6s ease 0.35s forwards;">
+            <div class="section-label">Home lab & projects</div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🖧</div>
+                    <h3>Project title here</h3>
+                    <p>Describe what you built or configured. Even small things count — a VLAN setup, a pi-hole DNS, a
+                        subnetting
+                        exercise.</p>
+                    <span class="card-arrow">View on GitHub →</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📡</div>
+                    <h3>Another project</h3>
+                    <p>What problem did you solve? What did you learn? Write 2–3 sentences. Link to a repo or writeup if
+                        you have
+                        one.</p>
+                    <span class="card-arrow">Read writeup →</span>
+                </div>
+                <div class="card" style="border-style: dashed; opacity: 0.5;">
+                    <div class="card-icon">＋</div>
+                    <h3>More coming soon</h3>
+                    <p>Currently building out the home lab. Check back for updates as the Network+ studies progress.</p>
+                </div>
+            </div>
         </div>
-        <div class="card" style="border-style: dashed; opacity: 0.5;">
-          <div class="card-icon">＋</div>
-          <h3>More coming soon</h3>
-          <p>Currently building out the home lab. Check back for updates as the Network+ studies progress.</p>
+
+        <!-- SKILLS FROM HELP DESK -->
+        <div style="opacity:0; animation: fadeUp 0.6s ease 0.5s forwards;">
+            <div class="section-label">What help desk taught me</div>
+            <div
+                style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 32px; max-width: 680px;">
+                <p
+                    style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9; margin-bottom: 16px;">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    Consectetur adipiscing elit quisque faucibus ex sapien vitae.
+                    Ex sapien vitae pellentesque sem placerat in id.
+                    Placerat in id cursus mi pretium tellus duis.
+                    Pretium tellus duis convallis tempus leo eu aenean.
+                </p>
+                <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9;">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                    Consectetur adipiscing elit quisque faucibus ex sapien vitae.
+                    Ex sapien vitae pellentesque sem placerat in id.
+                    Placerat in id cursus mi pretium tellus duis.
+                    Pretium tellus duis convallis tempus leo eu aenean.
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <!-- SKILLS FROM HELP DESK -->
-    <div style="opacity:0; animation: fadeUp 0.6s ease 0.5s forwards;">
-      <div class="section-label">What help desk taught me</div>
-      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 32px; max-width: 680px;">
-        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9; margin-bottom: 16px;">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-          Consectetur adipiscing elit quisque faucibus ex sapien vitae. 
-          Ex sapien vitae pellentesque sem placerat in id. 
-          Placerat in id cursus mi pretium tellus duis. 
-          Pretium tellus duis convallis tempus leo eu aenean.
-        </p>
-        <p style="font-family: var(--font-mono); font-size: 14px; color: var(--muted); line-height: 1.9;">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-          Consectetur adipiscing elit quisque faucibus ex sapien vitae. 
-          Ex sapien vitae pellentesque sem placerat in id. 
-          Placerat in id cursus mi pretium tellus duis. 
-          Pretium tellus duis convallis tempus leo eu aenean.
-        </p>
-      </div>
-    </div>
+    </main>
 
-  </main>
-
-  <footer>
-    <p>© 2025 eunivadev — built with GitHub Pages</p>
-    <div class="social-links">
-      <a href="https://github.com/eunivadev" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="mailto:you@email.com">Email</a>
-    </div>
-  </footer>
+    <footer>
+        <p>© 2025 eunivadev — built with GitHub Pages</p>
+        <div class="social-links">
+            <a href="https://github.com/eunivadev" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="mailto:you@email.com">Email</a>
+        </div>
+    </footer>
 
 </body>
+
 </html>

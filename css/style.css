@@ -9,7 +9,7 @@
   --text: #e8edf2;
   --muted: #6b7a8d;
   --font-cons: 'Consolas', monospace;
-  --font-mono: 'DM Mono', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 html { scroll-behavior: smooth; }

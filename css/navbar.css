@@ -37,6 +37,7 @@ nav {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 0.2s;
+  padding: 20px 0px;
 }
 
 .nav-links a:hover,

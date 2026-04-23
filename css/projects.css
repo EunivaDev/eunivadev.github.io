@@ -1,0 +1,207 @@
+/* ─── PROJECT ACCORDION ─────────────────────────────── */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.accordion-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.accordion-item.active {
+  border-color: rgba(0, 212, 160, 0.3);
+}
+
+/* ── Header row (always visible) ── */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.accordion-header:hover .accordion-arrow {
+  color: var(--accent);
+}
+
+.accordion-arrow {
+  font-size: 16px;
+  color: var(--muted);
+  transition: transform 0.25s ease, color 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.accordion-item.active .accordion-arrow {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
+
+.accordion-title-wrap {
+  flex: 1;
+}
+
+.accordion-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.accordion-item.active .accordion-title {
+  color: var(--accent);
+}
+
+.accordion-subtitle {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.accordion-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: rgba(0, 212, 160, 0.12);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.accordion-badge.planned {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* ── Collapsible body ── */
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+  grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+  overflow: hidden;
+}
+
+.accordion-content {
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+/* ── Progress mini-timeline inside accordion ── */
+.progress-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.progress-step {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0 14px;
+}
+
+.progress-step-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-node {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.progress-node.done {
+  background: var(--accent);
+}
+
+.progress-node.current {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 160, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.progress-node.todo {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.progress-line {
+  width: 1px;
+  flex: 1;
+  min-height: 12px;
+  background: var(--border);
+  margin: 3px 0;
+}
+
+.progress-step-right {
+  padding-bottom: 16px;
+}
+
+.progress-step:last-child .progress-step-right {
+  padding-bottom: 0;
+}
+
+.progress-step-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: var(--text);
+}
+
+.progress-step-title.muted {
+  color: var(--muted);
+}
+
+.progress-step-desc {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── Resources / links row ── */
+.accordion-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.accordion-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.accordion-link:hover {
+  color: var(--accent);
+  border-color: rgba(0, 212, 160, 0.4);
+}

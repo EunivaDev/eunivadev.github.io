@@ -124,7 +124,7 @@
                                 <div class="progress-timeline">
                                     <div class="progress-step">
                                         <div class="progress-step-left">
-                                            <div class="progress-node current"></div>
+                                            <div class="progress-node done"></div>
                                             <div class="progress-line"></div>
                                         </div>
                                         <div class="progress-step-right">
@@ -136,19 +136,18 @@
                                     </div>
                                     <div class="progress-step">
                                         <div class="progress-step-left">
-                                            <div class="progress-node todo"></div>
+                                            <div class="progress-node done"></div>
                                             <div class="progress-line"></div>
                                         </div>
                                         <div class="progress-step-right">
                                             <div class="progress-step-title">Connecting Jellyfin to NAS for movie and
                                                 video access</div>
-                                            <div class="progress-step-desc">Establish a connection to NAS for stored
-                                                videos and movies</div>
+                                            <div class="progress-step-desc">Mounted NAS on proxmox then shared mount to Jellyfin container</div>
                                         </div>
                                     </div>
                                     <div class="progress-step">
                                         <div class="progress-step-left">
-                                            <div class="progress-node todo"></div>
+                                            <div class="progress-node current"></div>
                                         </div>
                                         <div class="progress-step-right">
                                             <div class="progress-step-title">Media collection</div>
@@ -358,17 +357,12 @@
 
     </main>
 
-    <footer>
-        <p>© 2025 eunivadev — built with GitHub Pages</p>
-        <div class="social-links">
-            <a href="https://github.com/eunivadev" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="mailto:you@email.com">Email</a>
-        </div>
-    </footer>
+    <div id="footer"></div>
+
 
     <script src="js/loadNavbar.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/loadFooter.js"></script>
 
 </body>
 
